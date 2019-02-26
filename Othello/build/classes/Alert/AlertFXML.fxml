@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="257.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Alert.AlertFXMLController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="271.0" layoutX="-9.0" layoutY="-7.0" stroke="WHITE" strokeType="INSIDE" width="432.0" />
+      <TextArea fx:id="Descrizione" layoutX="17.0" layoutY="127.0" prefHeight="116.0" prefWidth="378.0" promptText="Eccoti qui spiegato." />
+      <Label fx:id="Titolo" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="30.0" prefWidth="378.0" text="Hey" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Sottotitolo" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="44.0" prefHeight="76.0" prefWidth="378.0" text="Ecco cosa sta succedendo." textAlignment="CENTER" />
+      <Button fx:id="Cancella" layoutX="362.0" layoutY="218.0" mnemonicParsing="false" onAction="#cancella" text="No" />
+      <Button fx:id="Conferma" layoutX="17.0" layoutY="218.0" mnemonicParsing="false" onAction="#conferma" text="Sì" />
+   </children>
+</AnchorPane>

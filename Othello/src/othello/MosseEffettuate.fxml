@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="309.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="othello.MosseEffettuateController">
+   <children>
+      <TextArea fx:id="area" editable="false" layoutX="29.0" layoutY="28.0" prefHeight="463.0" prefWidth="251.0" />
+      <Button layoutX="59.0" layoutY="517.0" mnemonicParsing="false" onAction="#update" text="update" />
+      <Button layoutX="196.0" layoutY="517.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="54.0" text="clear" />
+      <Separator layoutX="33.0" layoutY="507.0" prefHeight="0.0" prefWidth="244.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="othello.GUIController">
+   <children>
+      <BorderPane fx:id="BorderPane" prefHeight="720.0" prefWidth="1024.0">
+         <top>
+            <MenuBar fx:id="Menu" BorderPane.alignment="CENTER">
+              <menus>
+                  <Menu fx:id="MenuFile" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="ButtScreenshot" mnemonicParsing="false" onAction="#takeScreenshot" text="Screenshot" />
+                        <MenuItem fx:id="ButtEsci" mnemonicParsing="false" onAction="#chiudi" text="Esci" />
+                    </items>
+                  </Menu>
+                <Menu fx:id="MenuGioco" mnemonicParsing="false" text="Gioco">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#mostraMosse" text="Storico mosse" />
+                     </items>
+                </Menu>
+                <Menu fx:id="MenuConnect" mnemonicParsing="false" text="Connettività">
+                  <items>
+                    <MenuItem fx:id="ButtConnetti" mnemonicParsing="false" onAction="#connetti" text="Schermata di Connessione" />
+                        <MenuItem fx:id="ButtDisconnetti" mnemonicParsing="false" onAction="#disconnetti" text="Disconnetti" />
+                  </items>
+                </Menu>
+                <Menu fx:id="MenuAiuto" mnemonicParsing="false" text="Aiuto">
+                  <items>
+                    <MenuItem fx:id="ButtHelp" mnemonicParsing="false" onAction="#showAiuto" text="Schermata di aiuto" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <SubScene fx:id="ScenaUtility" height="695.0" width="309.0" BorderPane.alignment="CENTER">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

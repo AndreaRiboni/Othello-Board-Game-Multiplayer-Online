@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="othello.iProfiloController">
+   <children>
+       <AnchorPane id="AnchorPane" layoutY="14.0" prefHeight="605.0" prefWidth="309.0">
+            <children>
+               <TextField fx:id="nome" layoutX="82.0" layoutY="417.0" promptText="nome" />
+            <PasswordField fx:id="psw" layoutX="83.0" layoutY="452.0" promptText="password" />
+               <Button fx:id="logbutton" layoutX="84.0" layoutY="484.0" mnemonicParsing="false" onAction="#login" text="login" />
+               <Button fx:id="regbutton" layoutX="170.0" layoutY="484.0" mnemonicParsing="false" onAction="#registrati" text="registrati" />
+               <TextField fx:id="ip" layoutX="85.0" layoutY="290.0" promptText="ip" />
+               <TextField fx:id="porta" layoutX="85.0" layoutY="328.0" promptText="port" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="234.0" layoutX="24.0" layoutY="14.0" stroke="#00000017" strokeType="INSIDE" width="263.0" />
+               <Rectangle fx:id="feedback" arcHeight="250.0" arcWidth="250.0" fill="WHITE" height="55.0" layoutX="72.0" layoutY="178.0" stroke="#000000a5" strokeType="INSIDE" strokeWidth="3.0" width="53.0" />
+               <Button fx:id="startbutton" layoutX="138.0" layoutY="363.0" mnemonicParsing="false" onAction="#start" text="start" />
+               <Button fx:id="noLogbutton" layoutX="85.0" layoutY="521.0" mnemonicParsing="false" onAction="#pass" prefHeight="25.0" prefWidth="149.0" text="Avanti" />
+               <Label alignment="TOP_LEFT" layoutX="82.0" layoutY="161.0" prefHeight="17.0" prefWidth="43.0" text="Turno:" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="37.0" layoutX="40.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="87.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4d4d4d" height="37.0" layoutX="181.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="87.0" />
+            <Label layoutX="58.0" layoutY="43.0" text="BIANCHI" />
+            <Label layoutX="212.0" layoutY="43.0" text="NERI" textFill="WHITE" />
+            <Label fx:id="NBianchi" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="79.0" prefHeight="36.0" prefWidth="100.0" text="???" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="NNeri" alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="79.0" prefHeight="36.0" prefWidth="100.0" text="???" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="57.0" layoutY="117.0" mnemonicParsing="false" onAction="#conta" prefHeight="25.0" prefWidth="46.0" text="conta" />
+            <Button layoutX="202.0" layoutY="117.0" mnemonicParsing="false" onAction="#resetta" prefHeight="25.0" prefWidth="46.0" text="reset" />
+            <Label alignment="TOP_LEFT" layoutX="171.0" layoutY="161.0" prefHeight="17.0" prefWidth="69.0" text="Esito partita:" />
+            <Rectangle fx:id="feedbackpartita" arcHeight="250.0" arcWidth="250.0" fill="WHITE" height="55.0" layoutX="177.0" layoutY="178.0" stroke="#000000a5" strokeType="INSIDE" strokeWidth="3.0" width="53.0" />
+            <Label layoutX="238.0" layoutY="334.0" text="default: 4444">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="63.0" layoutY="294.0" prefHeight="17.0" prefWidth="20.0" text="IP:" />
+            <Label alignment="TOP_LEFT" layoutX="49.0" layoutY="332.0" prefHeight="17.0" prefWidth="46.0" text="Porta:" />
+            <Label alignment="TOP_LEFT" layoutX="20.0" layoutY="421.0" prefHeight="17.0" prefWidth="69.0" text="Username:" />
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="456.0" prefHeight="17.0" prefWidth="69.0" text="Password:" />
+            </children>
+         </AnchorPane>
+   </children>
+</AnchorPane>
