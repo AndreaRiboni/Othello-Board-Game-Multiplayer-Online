@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="othellobot.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1a1a1" height="520.0" stroke="TRANSPARENT" strokeType="INSIDE" width="498.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#175e41" height="118.0" layoutX="30.0" layoutY="366.0" stroke="#363636" strokeType="INSIDE" strokeWidth="3.0" width="253.0" />
+      
+      <Label fx:id="POWERED" layoutX="85.0" layoutY="428.0" text="OPEN DAY" textFill="#c7cd9d">
+         <font>
+            <Font name="Courier New Bold" size="29.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a1a1" height="159.0" layoutX="1.0" layoutY="356.0" stroke="TRANSPARENT" strokeType="INSIDE" width="30.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#a1a1a1" height="159.0" layoutX="283.0" layoutY="356.0" stroke="TRANSPARENT" strokeType="INSIDE" width="215.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#515151" height="297.0" layoutX="29.0" layoutY="41.0" stroke="TRANSPARENT" strokeType="INSIDE" width="440.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#171717" height="118.0" layoutX="149.0" layoutY="66.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#171717" height="118.0" layoutX="150.0" layoutY="196.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="cont1" arcHeight="5.0" arcWidth="5.0" fill="#757373" height="54.0" layoutX="324.0" layoutY="397.0" stroke="TRANSPARENT" strokeType="INSIDE" width="121.0" />
+      <Rectangle fx:id="cont2" arcHeight="5.0" arcWidth="5.0" fill="#757373" height="118.0" layoutX="358.0" layoutY="366.0" stroke="TRANSPARENT" strokeType="INSIDE" width="56.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="105.0" layoutX="365.0" layoutY="372.0" stroke="TRANSPARENT" strokeType="INSIDE" width="42.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111111" height="105.0" layoutX="364.0" layoutY="372.0" rotate="90.0" stroke="TRANSPARENT" strokeType="INSIDE" width="42.0" />
+      <TextField fx:id="IPField" layoutX="175.0" layoutY="91.0" prefHeight="23.0" prefWidth="149.0">
+         <font>
+            <Font name="Courier New" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PortField" layoutX="175.0" layoutY="143.0" prefHeight="23.0" prefWidth="149.0">
+         <font>
+            <Font name="Courier New" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="189.0" layoutY="67.0" text="IP ADDRESS" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="119.0" text="PORT" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Ellipse fx:id="StatusConnection" fill="#0d0d0d" layoutX="209.0" layoutY="227.0" radiusX="21.0" radiusY="20.0" stroke="#00000068" strokeType="INSIDE" />
+      <Label layoutX="243.0" layoutY="220.0" text="CONNECTED" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="12.0" />
+         </font>
+      </Label>
+      <Ellipse fx:id="StatusMatch" fill="#0d0d0d" layoutX="209.0" layoutY="282.0" radiusX="21.0" radiusY="20.0" stroke="#00000068" strokeType="INSIDE" />
+      <Label layoutX="243.0" layoutY="275.0" text="STATUS" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="StartButton" layoutX="356.0" layoutY="412.0" onMouseClicked="#start" text="START" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#171717" height="249.0" layoutX="30.0" layoutY="66.0" stroke="TRANSPARENT" strokeType="INSIDE" width="97.0" />
+      <Label layoutX="-21.0" layoutY="170.0" rotate="-90.0" text="OTHELLOBOT" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="33.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1f93ff00" height="222.0" layoutX="49.0" layoutY="82.0" stroke="#a10000" strokeType="INSIDE" strokeWidth="5.0" width="61.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#171717" height="249.0" layoutX="372.0" layoutY="66.0" stroke="TRANSPARENT" strokeType="INSIDE" width="97.0" />
+      <Ellipse fx:id="ButtConnect" fill="#a4a4a4" layoutX="421.0" layoutY="102.0" onMouseClicked="#connetti" radiusX="21.0" radiusY="20.0" stroke="#00000068" strokeType="INSIDE" />
+      <Label layoutX="396.0" layoutY="131.0" onDragDetected="#connetti" text="CONNECT" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="12.0" />
+         </font>
+      </Label>
+      <Slider fx:id="LevelDiff" blockIncrement="2.0" layoutX="414.0" layoutY="162.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="1" onMouseMoved="#update" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Label layoutX="371.0" layoutY="233.0" rotate="-90.0" text="DIFFICULTY" textFill="#d01010">
+         <font>
+            <Font name="Courier New Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#ffffff00" height="118.0" layoutX="30.0" layoutY="366.0" stroke="#363636" strokeType="INSIDE" strokeWidth="3.0" width="253.0" />
+      <Label fx:id="dif" layoutX="401.0" layoutY="181.0" rotate="-90.0" text="3" textFill="RED">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="algorithm" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="377.0" prefHeight="20.0" prefWidth="238.0" text="Algorithm not setted" textAlignment="CENTER" textFill="#c7cd9d">
+         <font>
+            <Font name="Courier New Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
